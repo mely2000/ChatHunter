@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "discord.js": "^12.5.3",
     "tmi.js": "^1.8.3"
   }
 }
