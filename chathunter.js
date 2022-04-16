@@ -26,7 +26,7 @@ Dclient.on('ready', () =>
 
 Tclient.on('message', (channel, tags, message, self) => 
 {
-    if(tags['display-name'] == '')
+    if(tags['display-name'] == '') //username of twitch user goes here
     {
         console.log(tags['display-name'] +': '+ message);
         Dclient.channels.cache.get("855050655815172116").send(tags['display-name']+ ': '+message);
