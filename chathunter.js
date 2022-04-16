@@ -26,7 +26,7 @@ Dclient.on('ready', () =>
 
 Tclient.on('message', (channel, tags, message, self) => 
 {
-    if(tags['display-name'] == 'xMELYx' || tags['display-name'] == 'tazr_ow' || tags['display-name'] == 'onlyends' || tags['display-name'] == 'FrostiiOW')
+    if(tags['display-name'] == '')
     {
         console.log(tags['display-name'] +': '+ message);
         Dclient.channels.cache.get("855050655815172116").send(tags['display-name']+ ': '+message);
